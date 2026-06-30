@@ -881,7 +881,7 @@ Banner Style
 
 .main-banner:before {
   content: '';
-  background-image: url(../images/banner-right-image.png);
+  background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -2022,4 +2022,112 @@ responsive
   .contact-us .info span {
     margin-bottom: 20px;
   }
+}
+
+/* ---------------------------------------------
+Workflow Section Styles
+--------------------------------------------- */
+.workflow-section {
+  position: relative;
+  padding: 120px 0px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.workflow-section .left-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.05);
+}
+
+.workflow-section .section-heading {
+  margin-bottom: 40px;
+}
+
+.workflow-accordion {
+  margin-top: 30px;
+}
+
+.workflow-accordion .accordion-item {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+  border: 1px solid #ededed;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.workflow-accordion .accordion-item.active {
+  border-color: #ff695f;
+  box-shadow: 0px 10px 25px rgba(255, 105, 95, 0.1);
+}
+
+.workflow-accordion .accordion-header {
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.workflow-accordion .accordion-item.active .accordion-header {
+  background-color: #fafafa;
+}
+
+.workflow-accordion .accordion-header h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.workflow-accordion .accordion-item.active .accordion-header h5 {
+  color: #ff695f;
+}
+
+.workflow-accordion .toggle-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.workflow-accordion .accordion-item.active .toggle-icon {
+  background-color: #ff695f;
+  color: #fff;
+}
+
+.workflow-accordion .toggle-icon i {
+  font-size: 14px;
+}
+
+.workflow-accordion .accordion-body {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 25px;
+  transition: all 0.4s ease-in-out;
+}
+
+.workflow-accordion .accordion-item.active .accordion-body {
+  max-height: 250px; /* Allow enough height for text */
+  opacity: 1;
+  padding: 10px 25px 25px 25px;
+}
+
+.workflow-accordion .accordion-body p {
+  font-size: 15px;
+  line-height: 26px;
+  color: #666;
+  margin: 0;
 }
